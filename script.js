@@ -63,6 +63,30 @@ document.getElementById("scissors").addEventListener("click", () => {
     playRound("scissors", computerChoice);
 });
 
+/*
+const newGame = document.createElement('div')
+newGame.textContent = 'Play again';
+newGame.classList.add('button', 'refresh');
+*/
+
+const newGame = document.querySelector('.refresh');
+
+function refreshPage() {
+    window.location.reload(true);
+};
+
+function refreshHover() {
+    refresh.classList.add('userHover');
+};
+
+function removeHover() {
+    this.classList.remove('userHover');
+};
+
+newGame.addEventListener('mouseover', refreshHover);
+newGame.addEventListener('mouseleave', removeHover);
+newGame.addEventListener('click', refreshHover);
+newGame.addEventListener('click', refreshPage);
 
 /* 
 function playGame() {

@@ -34,3 +34,16 @@ body {
     flex-direction: column;
     align-items: center;
 }
+
+.refresh {
+    margin-top: 20px;
+    height: 2rem;
+    width: 6rem;
+    background-color: antiquewhite;
+    border-radius: 5px;
+}
+
+.refresh:hover {
+    transform: scale(1.1);
+    background-color: aqua;
+}
